@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses - Excel Mastery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Century+Gothic:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Excel Mastery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li class="active"><a href="my-courses.html">My Courses</a></li>
+                <li><a href="instructor.html">Instructor</a></li>
+                <li><a href="#" id="login-btn">Login</a></li>
+                <li><a href="#" id="register-btn">Register</a></li>
+                <li id="profile-link" style="display:none;"><a href="profile.html">Profile</a></li>
+                <li id="logout-btn" style="display:none;"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="my-courses-section">
+            <h2>My Courses</h2>
+            
+            <div class="progress-summary">
+                <h3>Learning Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 45%;"></div>
+                </div>
+                <p>Overall Completion: 45%</p>
+            </div>
+            
+            <div class="enrolled-courses">
+                <h3>Currently Enrolled</h3>
+                <div class="course-grid">
+                    <!-- Enrolled courses will be loaded here by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="completed-courses">
+                <h3>Completed Courses</h3>
+                <div class="course-grid">
+                    <!-- Completed courses will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Excel Mastery by John Nyallu. All rights reserved.</p>
+    </footer>
+
+    <script src="js/courses.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

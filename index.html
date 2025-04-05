@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Mastery - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Century+Gothic:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Excel Mastery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="my-courses.html">My Courses</a></li>
+                <li><a href="instructor.html">Instructor</a></li>
+                <li><a href="#" id="login-btn">Login</a></li>
+                <li><a href="#" id="register-btn">Register</a></li>
+                <li id="profile-link" style="display:none;"><a href="profile.html">Profile</a></li>
+                <li id="logout-btn" style="display:none;"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Master Excel with Industry Experts</h2>
+            <p>Transform your data analysis skills with our comprehensive Excel courses</p>
+            <a href="courses.html" class="btn">Browse Courses</a>
+        </section>
+
+        <section class="news">
+            <h3>Latest News & Updates</h3>
+            <div class="news-item">
+                <h4>New Advanced Excel Course Added!</h4>
+                <p>We've just launched our new "Excel Power User" course covering advanced data modeling techniques.</p>
+                <span class="date">May 15, 2025</span>
+            </div>
+            <div class="news-item">
+                <h4>Summer Learning Challenge</h4>
+                <p>Enroll in any two courses this summer and get a third course free!</p>
+                <span class="date">June 1, 2025</span>
+            </div>
+        </section>
+
+        <section class="featured-courses">
+            <h3>Featured Courses</h3>
+            <div class="course-grid">
+                <div class="course-card">
+                    <img src="images/course-placeholder.jpg" alt="Excel Basics">
+                    <h4>Excel Basics</h4>
+                    <p>Learn the fundamentals of Excel in this beginner-friendly course.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="course-card">
+                    <img src="images/course-placeholder.jpg" alt="Data Analysis">
+                    <h4>Data Analysis with Excel</h4>
+                    <p>Master pivot tables, charts, and data visualization techniques.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="course-card">
+                    <img src="images/course-placeholder.jpg" alt="Excel Formulas">
+                    <h4>Advanced Excel Formulas</h4>
+                    <p>Deep dive into VLOOKUP, INDEX-MATCH, and array formulas.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Excel Mastery by John Nyallu. All rights reserved.</p>
+    </footer>
+
+    <!-- Auth Modals -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Login</h3>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Register</h3>
+            <form id="register-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Excel Mastery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Century+Gothic:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Excel Mastery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="my-courses.html">My Courses</a></li>
+                <li><a href="instructor.html">Instructor</a></li>
+                <li id="login-btn"><a href="#">Login</a></li>
+                <li id="register-btn"><a href="#">Register</a></li>
+                <li class="active" id="profile-link"><a href="profile.html">Profile</a></li>
+                <li id="logout-btn"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <div class="profile-header">
+                <div class="avatar">
+                    <img src="images/user-avatar.png" alt="User Avatar">
+                    <button class="btn edit-btn">Edit Profile</button>
+                </div>
+                <div class="profile-info">
+                    <h2 id="user-name">Alex Mtutu</h2>
+                    <p id="user-email">alex.mtutu@example.com</p>
+                    <p>Member since: <span id="join-date">January 2025</span></p>
+                </div>
+            </div>
+            
+            <div class="profile-details">
+                <div class="detail-card">
+                    <h3>Personal Information</h3>
+                    <form id="personal-info-form">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="full-name" value="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" id="email" value="john.doe@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" id="phone" value="+1234567890">
+                        </div>
+                        <button type="submit" class="btn">Save Changes</button>
+                    </form>
+                </div>
+                
+                <div class="detail-card">
+                    <h3>Change Password</h3>
+                    <form id="password-form">
+                        <div class="form-group">
+                            <label>Current Password</label>
+                            <input type="password" id="current-password">
+                        </div>
+                        <div class="form-group">
+                            <label>New Password</label>
+                            <input type="password" id="new-password">
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm New Password</label>
+                            <input type="password" id="confirm-password">
+                        </div>
+                        <button type="submit" class="btn">Update Password</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="learning-stats">
+                <h3>Learning Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h4>Courses Enrolled</h4>
+                        <p id="enrolled-count">5</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Courses Completed</h4>
+                        <p id="completed-count">2</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Learning Hours</h4>
+                        <p id="learning-hours">24.5</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Certificates Earned</h4>
+                        <p id="certificates-count">2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Excel Mastery by John Nyallu. All rights reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
