@@ -27,7 +27,7 @@ This website can be deployed for free on GitHub Pages:
 2. Upload all files to the repository
 3. Go to Repository Settings > Pages
 4. Select the main branch as the source
-5. Your site will be published at `https://[your-username].github.io/[repository-name]/`
+5. This site will be published at `https://[your-username].github.io/[repository-name]/`
 
 ## Customization
 
